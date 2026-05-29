@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Thiri Min — Technical Trainer & Developer. Java, Spring Boot, React.js portfolio." />
+  <title>Thiri Min | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-ring"></div>
+    <span class="loader-text">Loading...</span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <img src="assets/profile.jpg" alt="Thiri Min" class="nav-profile-img" width="44" height="44" />
+        <span class="brand-name">Thiri Min</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#training">Training</a></li>
+          <li class="nav-item"><a class="nav-link nav-cta" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero-section">
+    <div class="hero-bg-shapes" aria-hidden="true">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="row align-items-center min-vh-100 py-5">
+        <div class="col-lg-7 order-2 order-lg-1">
+          <p class="hero-greeting fade-up">Hello, I'm</p>
+          <h1 class="hero-title fade-up delay-1">
+            <span class="gradient-text">Thiri Min</span>
+          </h1>
+          <h2 class="hero-subtitle fade-up delay-2">Technical Trainer @ FPT Software Academy</h2>
+          <p class="hero-location fade-up delay-2">
+            <i class="bi bi-geo-alt-fill"></i> Hanoi, Vietnam
+          </p>
+          <p class="hero-desc fade-up delay-3">
+            Bridging complex tech concepts with practical application — Java, Spring Boot, React.js & full-stack mentoring.
+          </p>
+          <div class="hero-actions fade-up delay-4">
+            <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+            <a href="assets/Thiri_Min.pdf" class="btn btn-outline-light btn-lg" download="Thiri_Min.pdf">Download Resume</a>
+          </div>
+          <div class="hero-stats fade-up delay-5">
+            <div class="stat-item">
+              <span class="stat-num" data-count="12">0</span>+
+              <span class="stat-label">GitHub Repos</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-count="8">0</span>+
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-count="15">0</span>+
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-center mb-4 mb-lg-0">
+          <div class="hero-image-wrap fade-up">
+            <div class="hero-image-ring"></div>
+            <img src="assets/profile.jpg" alt="Thiri Min Profile" class="hero-profile-img" />
+            <div class="floating-badge badge-1"><i class="bi bi-code-slash"></i> Java</div>
+            <div class="floating-badge badge-2"><i class="bi bi-lightning"></i> Spring</div>
+            <div class="floating-badge badge-3"><i class="bi bi-braces"></i> React</div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <i class="bi bi-chevron-double-down"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Who I Am</h2>
+        </div>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 reveal">
+            <div class="about-card glass-card">
+              <div class="about-icon-grid">
+                <span><i class="bi bi-cup-hot"></i> Mentor</span>
+                <span><i class="bi bi-laptop"></i> Developer</span>
+                <span><i class="bi bi-mortarboard"></i> Trainer</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 reveal">
+            <p class="lead about-lead">
+              <strong>Technical Trainer & Developer</strong> with expertise in Java, Spring Boot, and React.js.
+            </p>
+            <p>
+              Skilled in <strong>Java, Python, C++</strong> and database systems like MySQL, MSSQL Server, and phpMyAdmin.
+              Experienced in front-end technologies: <strong>HTML, CSS, Bootstrap, JavaScript, React</strong>.
+            </p>
+            <p>
+              Passionate about bridging complex concepts with practical application, ensuring effective knowledge transfer.
+              Committed to continuous learning and contributing to innovative projects.
+            </p>
+            <a href="https://www.youtube.com/@roadtocoding9862/" target="_blank" rel="noopener noreferrer" class="btn btn-youtube mt-3">
+              <i class="bi bi-youtube"></i> Check out my YouTube Channel
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section-padding section-alt">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Expertise</span>
+          <h2 class="section-title">My Skills</h2>
+        </div>
+        <div class="skills-grid reveal">
+          <span class="skill-chip" data-skill="Java"><i class="bi bi-filetype-java"></i> Java</span>
+          <span class="skill-chip" data-skill="Python"><i class="bi bi-filetype-py"></i> Python</span>
+          <span class="skill-chip" data-skill="C++"><i class="bi bi-braces-asterisk"></i> C++</span>
+          <span class="skill-chip" data-skill="Spring Boot"><i class="bi bi-box-seam"></i> Spring Boot</span>
+          <span class="skill-chip" data-skill="React.js"><i class="bi bi-react"></i> React.js</span>
+          <span class="skill-chip" data-skill="JavaScript"><i class="bi bi-filetype-js"></i> JavaScript</span>
+          <span class="skill-chip" data-skill="HTML5 & CSS3"><i class="bi bi-filetype-html"></i> HTML5 & CSS3</span>
+          <span class="skill-chip" data-skill="Bootstrap"><i class="bi bi-bootstrap"></i> Bootstrap</span>
+          <span class="skill-chip" data-skill="MySQL"><i class="bi bi-database"></i> MySQL</span>
+          <span class="skill-chip" data-skill="MSSQL Server"><i class="bi bi-server"></i> MSSQL Server</span>
+          <span class="skill-chip" data-skill="phpMyAdmin"><i class="bi bi-hdd-stack"></i> phpMyAdmin</span>
+          <span class="skill-chip" data-skill="Git / GitHub"><i class="bi bi-github"></i> Git / GitHub</span>
+          <span class="skill-chip" data-skill="RESTful APIs"><i class="bi bi-plug"></i> RESTful APIs</span>
+          <span class="skill-chip" data-skill="Microservices"><i class="bi bi-diagram-3"></i> Microservices</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Academic</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="timeline reveal">
+          <article class="timeline-card">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Graduated: May 2020</span>
+              <h3>Master's in Computer Engineering & Information Technology</h3>
+              <h4>Mandalay Technology University</h4>
+              <p>Specialized in Software Engineering. Coursework included Data Structures, Algorithms, Database Management, and Web Development.</p>
+            </div>
+          </article>
+          <article class="timeline-card">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Graduated: 2018</span>
+              <h3>Post Graduate Diploma in English</h3>
+              <h4>Mandalay University of Foreign Language</h4>
+              <p>Focused on advanced English communication, presentations, and academic writing.</p>
+            </div>
+          </article>
+          <article class="timeline-card">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Completed: 2017</span>
+              <h3>Diploma in English</h3>
+              <h4>Mandalay University of Foreign Language</h4>
+              <p>Engaged in group discussions and daily English practice sessions.</p>
+            </div>
+          </article>
+          <article class="timeline-card">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Completed: 2017</span>
+              <h3>Bachelor in Information Technology</h3>
+              <h4>University of Technology Mandalay</h4>
+              <p>Completed group project for an E-commerce Website.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section-padding section-alt">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Career</span>
+          <h2 class="section-title">Experience</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 reveal">
+            <article class="exp-card glass-card h-100">
+              <div class="exp-header">
+                <h3>Technical Trainer</h3>
+                <span class="exp-company">FPT Software Academy — FSA</span>
+              </div>
+              <p class="exp-meta"><i class="bi bi-geo-alt"></i> Hanoi, Vietnam · <i class="bi bi-calendar3"></i> Jan 2023 – Present</p>
+              <ul>
+                <li>Delivered training on Java, Spring Boot, and React.js.</li>
+                <li>Developed backend APIs and responsive front-end interfaces.</li>
+                <li>Mentored junior developers on best practices.</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-md-6 reveal">
+            <article class="exp-card glass-card h-100">
+              <div class="exp-header">
+                <h3>Project Manager</h3>
+                <span class="exp-company">KumoSolution — Evercomm</span>
+              </div>
+              <p class="exp-meta"><i class="bi bi-geo-alt"></i> Myanmar – Singapore · <i class="bi bi-calendar3"></i> Jan 2024 – Jun 2024</p>
+              <ul>
+                <li>Managed and assigned tasks to 7 team members.</li>
+                <li>Reviewed code and design updates.</li>
+                <li>Implemented IoT features for real-world websites.</li>
+                <li>Ensured high code quality through reviews.</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-md-6 reveal">
+            <article class="exp-card glass-card h-100">
+              <div class="exp-header">
+                <h3>IT Instructor</h3>
+                <span class="exp-company">Lithan — eduCLaas</span>
+              </div>
+              <p class="exp-meta"><i class="bi bi-geo-alt"></i> Remote (Singapore) · <i class="bi bi-calendar3"></i> Jan 2021 – Dec 2023</p>
+              <ul>
+                <li>Developed backend services with Java and Spring Boot.</li>
+                <li>Collaborated on enterprise application features.</li>
+                <li>Contributed to code reviews ensuring standards.</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-md-6 reveal">
+            <article class="exp-card glass-card h-100">
+              <div class="exp-header">
+                <h3>Senior Java Programmer</h3>
+                <span class="exp-company">DIR-ACE Technology</span>
+              </div>
+              <p class="exp-meta"><i class="bi bi-geo-alt"></i> Japan Based · <i class="bi bi-calendar3"></i> Jan 2021 – Dec 2023</p>
+              <ul>
+                <li>Developed programs using IBM platform.</li>
+                <li>Handled and reviewed Oracle data.</li>
+                <li>Created unit & integration tests for deployment quality.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="project-card glass-card h-100">
+              <div class="project-icon"><i class="bi bi-filetype-java"></i></div>
+              <h3>Java Workspace</h3>
+              <p>Learning repository covering Java fundamentals to advanced concepts.</p>
+              <a href="https://github.com/Thiri-Min/Java-Workspace" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="project-card glass-card h-100">
+              <div class="project-icon"><i class="bi bi-folder2-open"></i></div>
+              <h3>Java Mini Projects</h3>
+              <p>Collection of hands-on Java mini projects for practice and demonstration.</p>
+              <a href="https://github.com/Thiri-Min/Java_Mini_Projects" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="project-card glass-card h-100">
+              <div class="project-icon"><i class="bi bi-person-lock"></i></div>
+              <h3>Register & Login</h3>
+              <p>Authentication system demonstrating user registration and login flows.</p>
+              <a href="https://github.com/Thiri-Min/registerandlogin" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="project-card glass-card h-100">
+              <div class="project-icon"><i class="bi bi-filetype-html"></i></div>
+              <h3>HTML Course</h3>
+              <p>HTML basics and structured learning materials from foundational course work.</p>
+              <a href="https://github.com/Thiri-Min/HTML" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="project-card glass-card h-100">
+              <div class="project-icon"><i class="bi bi-database"></i></div>
+              <h3>SQL Projects</h3>
+              <p>TSQL scripts and database exercises for practical SQL mastery.</p>
+              <a href="https://github.com/Thiri-Min/SQL" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="project-card glass-card h-100">
+              <div class="project-icon"><i class="bi bi-github"></i></div>
+              <h3>More on GitHub</h3>
+              <p>Explore all repositories including Student projects and more.</p>
+              <a href="https://github.com/Thiri-Min/" target="_blank" rel="noopener noreferrer" class="project-link">View Profile <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Activities -->
+    <section id="training" class="section-padding section-alt">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">2025-2026 Highlights</span>
+          <h2 class="section-title">Training Activities</h2>
+          <p class="section-subtitle">FSA OJT Program — Full Stack Development Sessions</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-6 reveal">
+            <article class="training-card glass-card h-100">
+              <div class="training-badge">Completed · March 2025</div>
+              <h3>Java 05: Full Stack Development with Spring Boot</h3>
+              <h4>FSA OJT Program</h4>
+              <p>
+                Students gained hands-on experience building RESTful APIs using Spring Boot,
+                covering key concepts and practical implementation. They also worked with
+                databases and full stack development.
+              </p>
+              <div class="training-actions">
+                <button
+                  type="button"
+                  class="btn training-detail-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#java05DetailModal"
+                >
+                  View Detail <i class="bi bi-arrow-right-short"></i>
+                </button>
+              </div>
+              <div class="training-tags">
+                <span>Spring Boot</span>
+                <span>REST APIs</span>
+                <span>Full Stack</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-6 reveal">
+            <article class="training-card glass-card h-100 featured-training">
+              <div class="training-badge">Completed · July 2025</div>
+              <h3>Java 07: Spring Security & Microservices</h3>
+              <h4>FSA OJT Program</h4>
+              <p>
+                Java 07 class with 43 trainees completed an advanced session on Java and SQL, covering
+                authentication, microservices architecture, and designing secure interactive web applications.
+              </p>
+              <div class="training-actions">
+                <button
+                  type="button"
+                  class="btn training-detail-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#java07DetailModal"
+                >
+                  View Detail <i class="bi bi-arrow-right-short"></i>
+                </button>
+              </div>
+              <div class="training-tags">
+                <span>Spring Security</span>
+                <span>Microservices</span>
+                <span>43 Trainees</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-6 reveal">
+            <article class="training-card glass-card h-100">
+              <div class="training-badge">Completed · April 2026</div>
+              <h3>FU-01: Full-stack Web Development including Project Management</h3>
+              <h4>FSA OJT Program</h4>
+              <p>
+                FU-01 class with 51 trainees completed a practical 3.5-month OJT journey focused on
+                full-stack web development, database implementation, teamwork, and project management.
+              </p>
+              <div class="training-actions">
+                <button
+                  type="button"
+                  class="btn training-detail-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#fu01DetailModal"
+                >
+                  View Detail <i class="bi bi-arrow-right-short"></i>
+                </button>
+              </div>
+              <div class="training-tags">
+                <span>Full-stack Web Development</span>
+                <span>Project Management</span>
+                <span>51 Trainees</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-6 reveal">
+            <article class="training-card glass-card h-100 in-progress-training">
+              <div class="training-badge training-badge-progress">In Progress</div>
+              <h3>FU.Java_02: Full-stack Web Development using AI</h3>
+              <h4>FSA OJT Program</h4>
+              <p>
+                Current OJT cohort learning full-stack web development with AI integration, GitHub workflows,
+                project management, teamwork, and soft skills for real-world collaboration.
+              </p>
+              <div class="training-tags">
+                <span>Full-stack Web Development</span>
+                <span>AI</span>
+                <span>GitHub</span>
+                <span>Soft Skills</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Java 05 Detail Modal -->
+    <div class="modal fade training-modal" id="java05DetailModal" tabindex="-1" aria-labelledby="java05DetailModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="java05DetailModalLabel">Java 05 Activities — FSA OJT Highlights</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <article class="modal-post-card">
+              <h6><i class="bi bi-journal-check"></i> Final Project Completion — 36 Trainees</h6>
+              <p>
+                The Java 05 OJT class completed final projects after a 3.5-month learning journey with
+                full-stack technologies: Java, databases, frontend development, Git, and project management tools.
+                The cohort included 36 third-year FPT University trainees from diverse majors such as cybersecurity,
+                AI, .NET, Java, and Node.js.
+              </p>
+              <div class="modal-post-actions">
+                <a
+                  href="https://www.linkedin.com/posts/thiri-min_fsa-ojt-java-activity-7359985313160581120-JJRa?utm_source=share&utm_medium=member_desktop&rcm=ACoAADSYCfMBMx_wBIStH-vBwa08SN1ZPKsulk8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  View LinkedIn Post <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+                <button type="button" class="btn training-gallery-btn" data-gallery="java05-final">
+                  <i class="bi bi-images"></i> View Photos
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Java 07 Detail Modal -->
+    <div class="modal fade training-modal" id="java07DetailModal" tabindex="-1" aria-labelledby="java07DetailModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="java07DetailModalLabel">Java 07 Activities — FSA OJT Highlights</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <article class="modal-post-card">
+              <h6><i class="bi bi-stars"></i> Class Completion & Growth Journey</h6>
+              <p>
+                43 trainees from FPT University completed a 3.5-month OJT journey focused on Java, database,
+                full-stack development, project management, documentation, presentation, and communication skills.
+                The cohort was highlighted for being hardworking and passionate.
+              </p>
+              <div class="modal-post-actions">
+                <a
+                  href="https://www.linkedin.com/posts/thiri-min_java07class-fsa-activity-7404134891380211712-XuLZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADSYCfMBMx_wBIStH-vBwa08SN1ZPKsulk8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  View LinkedIn Post <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+                <button type="button" class="btn training-gallery-btn" data-gallery="java07-completion">
+                  <i class="bi bi-images"></i> View Photos
+                </button>
+              </div>
+            </article>
+
+            <article class="modal-post-card">
+              <h6><i class="bi bi-people-fill"></i> Final Project Presentation Memories</h6>
+              <p>
+                Java 07 concluded with final project presentations featuring 7 groups and 7 unique project titles.
+                This activity celebrated teamwork, practical implementation, and the cohort's full-stack progress.
+              </p>
+              <div class="modal-post-actions">
+                <a
+                  href="https://www.linkedin.com/posts/thiri-min_java07-ojt-fullstackdevelopment-activity-7407372185801093121-lIoA?utm_source=share&utm_medium=member_desktop&rcm=ACoAADSYCfMBMx_wBIStH-vBwa08SN1ZPKsulk8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  View LinkedIn Post <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+                <button type="button" class="btn training-gallery-btn" data-gallery="java07-presentation">
+                  <i class="bi bi-images"></i> View Photos
+                </button>
+              </div>
+            </article>
+
+            <article class="modal-post-card">
+              <h6><i class="bi bi-balloon-heart"></i> Trainers' Day Appreciation</h6>
+              <p>
+                A meaningful Java 07 class memory celebrating Trainers' Day at FSA, sharing gratitude and best wishes
+                for trainees' happiness, success, and a healthy future.
+              </p>
+              <div class="modal-post-actions">
+                <a
+                  href="https://www.linkedin.com/posts/thiri-min_trainersday-fsa-activity-7397220142084042753-E96_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADSYCfMBMx_wBIStH-vBwa08SN1ZPKsulk8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  View LinkedIn Post <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+                <button type="button" class="btn training-gallery-btn" data-gallery="java07-trainersday">
+                  <i class="bi bi-images"></i> View Photos
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FU-01 Detail Modal -->
+    <div class="modal fade training-modal" id="fu01DetailModal" tabindex="-1" aria-labelledby="fu01DetailModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="fu01DetailModalLabel">FU-01 Activities — FSA OJT Highlights</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <article class="modal-post-card">
+              <h6><i class="bi bi-easel2"></i> Final Mock Project Presentation</h6>
+              <p>
+                FU-01 trainees completed their final mock project presentation after 3.5 months of OJT training.
+                Students from AI, Python, Java, .NET, and Software Engineering majors practiced full-stack
+                development, databases, and project management through hands-on collaboration.
+              </p>
+              <div class="modal-post-actions">
+                <a
+                  href="https://www.linkedin.com/posts/thiri-min_ojt-fsa-activity-7452355031577628672-JHJt?utm_source=share&utm_medium=member_desktop&rcm=ACoAADSYCfMBMx_wBIStH-vBwa08SN1ZPKsulk8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  View LinkedIn Post <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+                <button type="button" class="btn training-gallery-btn" data-gallery="fu01-mock-presentation">
+                  <i class="bi bi-images"></i> View Photos
+                </button>
+              </div>
+            </article>
+
+            <article class="modal-post-card">
+              <h6><i class="bi bi-flower1"></i> International Women's Day Appreciation</h6>
+              <p>
+                A heartfelt classroom moment where FU-01 students celebrated International Women's Day with
+                gratitude, reflecting the supportive and meaningful trainer-trainee learning journey.
+              </p>
+              <div class="modal-post-actions">
+                <a
+                  href="https://www.linkedin.com/posts/thiri-min_internationalwomensday-gratitude-hn26abrcplabrfuabr01-activity-7436705047780098049-M2Wo?utm_source=share&utm_medium=member_desktop&rcm=ACoAADSYCfMBMx_wBIStH-vBwa08SN1ZPKsulk8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  View LinkedIn Post <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+                <button type="button" class="btn training-gallery-btn" data-gallery="fu01-womensday">
+                  <i class="bi bi-images"></i> View Photos
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Training Photo Slideshow -->
+    <div class="modal fade training-gallery-modal" id="trainingPhotoGallery" tabindex="-1" aria-labelledby="trainingPhotoGalleryLabel" aria-hidden="true" data-bs-backdrop="static">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <h5 class="modal-title" id="trainingPhotoGalleryLabel">Training Photos</h5>
+              <p class="gallery-slide-counter mb-0" id="gallerySlideCounter">1 / 1</p>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <div id="galleryLoading" class="gallery-loading d-none">
+              <div class="loader-ring"></div>
+              <span>Loading photos...</span>
+            </div>
+            <div id="galleryEmpty" class="gallery-empty d-none">
+              <i class="bi bi-image"></i>
+              <p>No photos available for this post yet.</p>
+            </div>
+            <div id="trainingCarousel" class="carousel slide carousel-fade" data-bs-ride="false" data-bs-interval="false">
+              <div class="carousel-inner" id="galleryCarouselInner"></div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#trainingCarousel" data-bs-slide="prev" id="galleryPrevBtn">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#trainingCarousel" data-bs-slide="next" id="galleryNextBtn">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              <div class="carousel-indicators" id="galleryIndicators"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Connect</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+        </div>
+        <div class="row justify-content-center reveal">
+          <div class="col-lg-8">
+            <div class="contact-card glass-card text-center">
+              <div class="contact-links">
+                <a href="https://www.linkedin.com/in/thiri-min/" target="_blank" rel="noopener noreferrer" class="contact-btn" title="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://www.youtube.com/@roadtocoding9862/" target="_blank" rel="noopener noreferrer" class="contact-btn" title="YouTube">
+                  <i class="bi bi-youtube"></i>
+                  <span>YouTube</span>
+                </a>
+                <a href="https://github.com/Thiri-Min/" target="_blank" rel="noopener noreferrer" class="contact-btn" title="GitHub">
+                  <i class="bi bi-github"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.tiktok.com/@ms.coding2" target="_blank" rel="noopener noreferrer" class="contact-btn" title="TikTok">
+                  <i class="bi bi-tiktok"></i>
+                  <span>TikTok</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/profile.jpg" alt="Thiri Min" class="footer-profile-img" width="48" height="48" />
+          <div>
+            <strong>Thiri Min</strong>
+            <p>Technical Trainer & Developer</p>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/thiri-min/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://www.youtube.com/@roadtocoding9862/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="https://github.com/Thiri-Min/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.tiktok.com/@ms.coding2" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <i class="bi bi-tiktok"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Thiri Min. All Rights Reserved.</p>
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">
+          <i class="bi bi-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/training-gallery.js"></script>
+</body>
+</html>

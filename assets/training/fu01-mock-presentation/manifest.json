@@ -1,0 +1,15 @@
+﻿{
+    "images":  [
+                   "assets/training/fu01-mock-presentation/01.jpg",
+                   "assets/training/fu01-mock-presentation/02.jpg",
+                   "assets/training/fu01-mock-presentation/03.jpg",
+                   "assets/training/fu01-mock-presentation/04.jpg",
+                   "assets/training/fu01-mock-presentation/05.jpg",
+                   "assets/training/fu01-mock-presentation/06.jpg",
+                   "assets/training/fu01-mock-presentation/07.jpg",
+                   "assets/training/fu01-mock-presentation/08.jpg",
+                   "assets/training/fu01-mock-presentation/09.jpg",
+                   "assets/training/fu01-mock-presentation/11.jpg"
+               ],
+    "title":  "Final Mock Project Presentation"
+}
