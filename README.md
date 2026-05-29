@@ -9,7 +9,7 @@ A modern, responsive portfolio built with **HTML5**, **CSS3**, **Bootstrap 5**, 
 - Sections: Hero, About, Skills, Education, Experience, Projects, Training Activities, Contact
 - Footer with LinkedIn, YouTube, GitHub, and TikTok links
 - Scroll animations, active nav highlighting, mobile-friendly layout
-- Training **View Detail** modals with **View Photos** slideshow (no LinkedIn account required)
+- Training **View Detail** modals with LinkedIn post links
 
 ## Quick Start
 
