@@ -696,6 +696,27 @@ section {
   color: var(--accent-1);
 }
 
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.project-status {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  border-radius: 999px;
+  background: rgba(99, 102, 241, 0.12);
+  color: var(--accent-2);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
 /* ===== Training ===== */
 .training-card {
   position: relative;
